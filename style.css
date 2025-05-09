@@ -1,0 +1,273 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  background-color: #e1efff;
+  padding: 2em;
+}
+
+.hero img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+section {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  margin-top: 1em;
+  border-radius: 8px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1em;
+  border-radius: 6px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #003366;
+  color: white;
+  padding: 0.5em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #003366;
+  color: white;
+  margin-top: 2em;
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 350px;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slider-text {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  border-radius: 8px;
+}
+.headmaster {
+  padding: 3em 1em;
+  background-color: #f8f8f8;
+}
+
+.headmaster-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.headmaster-photo {
+  width: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.headmaster-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.headmaster-text h2 {
+  color: #333;
+  margin-bottom: 0.5em;
+}
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 400px; /* or adjust as needed */
+  width: 100%;
+}
+
+.hero .slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* Ensures full coverage without distortion */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero .slide.active {
+  opacity: 1;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.hero .slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero .slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+
+.hero .slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slider-text {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #004080; /* dark blue */
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+.why-join {
+  padding: 4em 2em;
+  background-color: #f4f8ff;
+}
+
+.why-join-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+}
+
+.why-join-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.why-join-text {
+  flex: 1;
+}
+
+.why-join-text h2 {
+  color: #004080;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.why-join-text p {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.why-join-text ul {
+  list-style: disc inside;
+  color: #004080;
+}
+
